@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(236, 236, 236);
+}
+h1 {
+  text-align: center;
+}
+#title {
+  color: #fff;
+}
+td {
+  font-size: 14px;
+}
+/* Estilos mapa */
+#map {
+  width: 800px;
+  height: 600px;
+  background-image: url(/img/mapa.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.botones-map {
+  width: 800px;
+}
+.botones-map button {
+  width: 45%;
+}
+.ocultar {
+  display: none;
+}
+/* Buscador de imagenes */
+#container-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  justify-content: space-around;
+}
+
+.container-images-button {
+  max-width: 30%;
+  border-radius: 10px;
+}
+
+.container-images-button img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.container-images-button a {
+  width: 100%;
+  display: block;
+  margin-top: 5px;
+}
+
+#seeMore {
+  width: 15%;
+}
+
+/* API DE SUBIR IMAGENES */
+.container-inputs--gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.container-inputs--gallery button {
+  width: 20%;
+  margin-top: 20px;
+}
+.container-input {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  padding: 1.5rem;
+}
+.container-buttons--gallery {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  justify-content: space-between;
+}
+#galleryImages {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: space-evenly;
+}
+.galleryImages--card {
+  width: 400px;
+}
+.galleryImages--card img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.galleryImages--card button {
+  width: 100%;
+  display: block;
+  margin-top: 5px;
+}

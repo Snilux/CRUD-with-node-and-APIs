@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg bg-dark">
+  <div class="container-fluid">
+    <div>
+      <a href="/" class="btn btn-outline-light ms-5">Inicio</a>
+      <a href="/ubicacion" class="btn btn-outline-light ms-5">Ubicacion</a>
+      <a href="/multimedia" class="btn btn-outline-light ms-5">Buscar imagenes</a>
+      <a href="/indexedDB" class="btn btn-outline-light ms-5">Subir imagenes</a>
+    </div>
+    <div class="d-flex">
+      <h1 id="title">API DE </h1>
+      </dir>
+    </div>
+</nav>
+
+<script>
+  var url = window.location.pathname
+  var nombreAPI = url.slice(1)
+  if (nombreAPI) {
+    document.getElementById('title').textContent += nombreAPI
+  } else {
+    document.getElementById('title').textContent = "CRUD"
+  }
+</script>

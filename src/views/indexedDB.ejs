@@ -1,0 +1,19 @@
+<%- include("partials/header") %>
+<%- include("partials/nav") %>
+<div class="container-inputs--gallery">
+  <div class="container-input card border-primary">
+    <h1>Crear galeria de imagenes</h1>
+    <input type="file" id="imageInput" accept="image/*" multiple>
+    <div class="container-buttons--gallery">
+      <button class="btn btn-outline-primary p-0" id="loadImages">Subir imágenes</button>
+      <button class="btn btn-outline-primary p-0" id="seeImages">ver imágenes</button>
+      <button class="btn btn-outline-primary p-0" id="deleteAllImages">Borrar todas las imágenes</button>
+    </div>
+  </div>
+</div>
+
+<div id="galleryImages"></div>
+
+<%- include("chatbot") %>
+<script src="/js/indexedDB.js"></script>
+</body>

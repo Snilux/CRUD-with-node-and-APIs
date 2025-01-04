@@ -1,0 +1,30 @@
+<%- include("partials/header") %> <%- include("partials/nav") %>
+<body>
+  <h1 class="mt-2">Buscador de imágenes</h1>
+  <div class="container-sm">
+    <div class="input-group mb-1">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="¿Qué quieres buscar?"
+        aria-describedby="searchImages"
+        id="image"
+      />
+      <button class="btn btn-primary" type="button" id="searchImages">
+        Buscar
+      </button>
+    </div>
+  </div>
+  <div
+    class="container-fluid pt-4 pb-4"
+    id="container-images"
+    onscroll="esElFinal()"
+  ></div>
+  <%- include("chatbot") %>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="/js/multimedia.js"></script>
+</body>
